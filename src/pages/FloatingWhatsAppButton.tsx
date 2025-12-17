@@ -11,8 +11,8 @@ interface WhatsAppButtonProps {
 export const FloatingWhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   phoneNumber,
   message = "Hello! I'm interested in your services.",
-  buttonText = "Chat with us",
-  className = "",
+  buttonText: _buttonText = "Chat with us",
+  className = "", 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [customMessage, setCustomMessage] = useState(message);
