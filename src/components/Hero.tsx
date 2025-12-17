@@ -50,12 +50,15 @@ const textItemVariants = {
     opacity: 1, 
     y: 0, 
     filter: "blur(0px)",
-    transition: { duration: 0.8, ease: "easeOut" } 
+    transition: { duration: 0.8, ease: easeOut }  
   },
-};
+} as const;  
 
 
-  const textOpacity = useTransform(scrollYProgress, [0.3, 0.6], [1, 0]);
+
+ const textOpacity = useTransform(scrollYProgress, [0, 0.4, 0.6, 1], [1, 1, 0, 1], { clamp: true });
+
+
   return (
     <section
       ref={sectionRef}
@@ -71,7 +74,8 @@ const textItemVariants = {
         style={{ backgroundImage: `url(${backgroundImage})` }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1.5, ease: easeOut }}  
+
       />
           <div className="absolute inset-0 z-15 flex items-center justify-center pointer-events-none select-none overflow-hidden top-[-10%] sm:top-0">
          <h2
