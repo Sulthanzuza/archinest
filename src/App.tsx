@@ -18,7 +18,9 @@ function App() {
  
     <Router>
       <ScrollToTop />
-      <FloatingWhatsAppButton/>
+      <FloatingWhatsAppButton 
+      phoneNumber="+919037813345" 
+  buttonText="Contact Us"/>
       <Routes>
            
         <Route path="/" element={<MainLayout />}>

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { motion, useScroll, useTransform, easeInOut, easeIn } from "framer-motion";
+import { motion, useScroll, useTransform, easeIn } from "framer-motion";
 import heroImage from '/archinest hero.jpg'
 const images = [
   {
@@ -37,7 +37,7 @@ const textContainerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3, // Delays each line slightly
+      staggerChildren: 0.3, 
       delayChildren: 0.5,
     },
   },
@@ -52,7 +52,8 @@ const textItemVariants = {
     transition: { duration: 0.8, ease: "easeOut" } 
   },
 };
-// Fade out text on scroll
+
+
   const textOpacity = useTransform(scrollYProgress, [0.3, 0.6], [1, 0]);
   return (
     <section
