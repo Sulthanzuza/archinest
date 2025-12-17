@@ -72,7 +72,7 @@ export const projects: Project[] = [
   secproject7,
   secproject8,
   secproject9,
-  secproject10,
+  secproject1,
   secproject11,
   secproject12,
   secproject13,
