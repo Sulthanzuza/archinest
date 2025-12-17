@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
-import { motion, useScroll, useTransform, easeIn } from "framer-motion";
-import heroImage from '/archinest hero.jpg'
+import { motion, useScroll, useTransform, easeIn, easeOut } from "framer-motion";
+import heroImage from '/archinest hero.jpg';
+
 const images = [
   {
     url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1400",
