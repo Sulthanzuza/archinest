@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion, useScroll, useTransform, easeIn, easeOut } from "framer-motion";
-import heroImage from '/archinest hero.jpg';
+import heroImage from '/archinest hero.webp';
 
 const images = [
   {
@@ -103,13 +103,35 @@ const textItemVariants = {
           Welcome to
         </motion.p>
 
-        {/* "ARCHINEST" - Bold and Commanding */}
-        <motion.h1 
-          variants={textItemVariants}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white drop-shadow-2xl"
-        >
-          ARCHINEST
-        </motion.h1>
+      
+<motion.h1 
+  variants={textItemVariants}
+  className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white drop-shadow-2xl flex items-center justify-center"
+>
+  <span className="relative inline-block">
+    <motion.img 
+      src="https://cdn-icons-png.flaticon.com/512/744/744546.png" 
+      alt="Christmas Cap"
+      className="absolute 
+        /* Positioned specifically for the 'A' apex */
+        -top-[20%] -left-[-13%] 
+        /* Slightly larger to cover the thick font-weight */
+        w-[80%] h-auto 
+        -rotate-[40deg] 
+        z-30 pointer-events-none"
+      initial={{ y: -15, opacity: 0, rotate: -30 }}
+      animate={{ y: 0, opacity: 1, rotate: -20 }}
+      transition={{ 
+        delay: 1.4, 
+        duration: 0.8, 
+        type: "spring", 
+        stiffness: 100 
+      }}
+    />
+    A
+  </span>
+  RCHINEST
+</motion.h1>
 
         {/* Decorative Line */}
         <motion.div 

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import proj from '/projects.jpg'
+import proj from '/projects.webp'
 const Services = () => {
   const location = useLocation();
 
@@ -51,7 +51,7 @@ const Services = () => {
         id="interiors"
         className="relative flex flex-col md:flex-row items-center justify-center min-h-[80vh] py-10 sm:py-12 md:py-16 bg-black overflow-hidden bg-fixed px-4 sm:px-6 lg:px-12"
         style={{
-          backgroundImage: "url('/bg3.jpg')",
+          backgroundImage: "url('/bg3.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -102,7 +102,7 @@ const Services = () => {
         id="landscaping"
         className="relative flex flex-col md:flex-row items-center justify-center min-h-[80vh] py-10 sm:py-12 md:py-16 bg-black overflow-hidden bg-fixed px-4 sm:px-6 lg:px-12"
         style={{
-          backgroundImage: "url('/bg4.jpg')",
+          backgroundImage: "url('/bg4.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

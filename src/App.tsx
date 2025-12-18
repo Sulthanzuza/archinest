@@ -9,7 +9,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ProjectDetails from './pages/ProjectDetails';
 import Services from './pages/Services';
-
+import Snowfall from 'react-snowfall';
 import ScrollToTop from './components/ScrollToTop';
 
 
@@ -17,6 +17,17 @@ function App() {
   return (
  
     <Router>
+      <Snowfall
+        color="#f3fcffff"
+        snowflakeCount={200}  
+        style={{
+          position: 'fixed',
+          width: '100vw',
+          height: '100vh',
+          zIndex: 9999,
+          pointerEvents: 'none', 
+        }}
+      />
       <ScrollToTop />
       <FloatingWhatsAppButton 
       phoneNumber="+919037813345"

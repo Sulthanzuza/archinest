@@ -81,7 +81,7 @@ const ProjectDetails: React.FC = () => {
       </section>
 
       <section className='bg-cover bg-center bg-fixed'
-        style={{ backgroundImage: `url('/bg4.jpg')` }}>
+        style={{ backgroundImage: `url('/bg4.webp')` }}>
         <div className="absolute inset-0 bg-white/20 z-0 pointer-events-none" />
         <div className="mx-auto p-12 ">
 

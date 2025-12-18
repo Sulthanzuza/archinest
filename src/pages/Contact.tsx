@@ -7,8 +7,8 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import image1 from '/i1.jpg'
-import image2 from '/i2.jpg'
+import image1 from '/i1.webp'
+import image2 from '/i2.webp'
 function Contact() {
   // 🔹 Form state
   const [formData, setFormData] = useState({

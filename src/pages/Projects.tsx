@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { projects } from "../data/projectsData";
-import pro_hero from '/pro hero.jpg'
+import pro_hero from '/pro hero.webp'
 const PROJECT_TYPES = ["Residential", "Interior"];
 
 function Projects() {
@@ -36,7 +36,7 @@ function Projects() {
 
 
             <section className="relative bg-gray-200 min-h-screen py-10 px-2 bg-cover bg-center bg-fixed"
-                style={{ backgroundImage: `url('/bg3.jpg')` }}>
+                style={{ backgroundImage: `url('/bg3.webp')` }}>
 
                 <div className="absolute inset-0 bg-white/20 z-0 pointer-events-none" />
                 <div className="relative z-10">

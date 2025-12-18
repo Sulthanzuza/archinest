@@ -1,5 +1,5 @@
 import { useState } from "react";
-import aboutus from '/about us.jpg'
+import aboutus from '/about us.webp'
 const slides = [
     {
         title: "VISION",
@@ -51,7 +51,7 @@ function About() {
             <section
                 className="relative w-full px-4 sm:px-6 md:px-10 lg:px-20 py-10 sm:py-16 bg-fixed bg-cover bg-center"
                 style={{
-                    backgroundImage: "url('/bg4.jpg')",
+                    backgroundImage: "url('/bg4.webp')",
                 }}
             >
                 <div className="absolute inset-0 bg-white/20 backdrop-blur-xs"></div>

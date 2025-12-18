@@ -58,7 +58,7 @@ function Home() {
 
       <section
         className="w-full mx-auto px-4 sm:px-6 pt-40 pb-20 h-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center overflow-hidden relative bg-fixed bg-cover bg-center"
-        style={{ backgroundImage: "url('/bg4.jpg')" }}
+        style={{ backgroundImage: "url('/bg4.webp')" }}
       >
         
         <div className="absolute inset-0 bg-white/20 backdrop-blur-xs z-5 pointer-events-none"></div>
@@ -95,7 +95,7 @@ function Home() {
 
       <section
         className="mx-auto py-20 px-6 overflow-hidden relative bg-fixed bg-cover bg-center"
-        style={{ backgroundImage: "url('/new.jpg')" }}
+        style={{ backgroundImage: "url('/new.webp')" }}
       >
         {/* Background overlay */}
         <div className="absolute inset-0 bg-black/20 z-0 pointer-events-none"></div>
@@ -204,7 +204,7 @@ function Home() {
 
      <section
   className="relative w-full mx-auto pt-20 overflow-hidden bg-fixed bg-cover bg-center"
-  style={{ backgroundImage: "url('/bg4.jpg')" }}
+  style={{ backgroundImage: "url('/bg4.webp')" }}
 >
   {/* Background overlay */}
   <div className="absolute inset-0 bg-white/20 z-0 pointer-events-none"></div>
