@@ -1,5 +1,6 @@
 import { section } from 'framer-motion/client';
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
@@ -71,11 +72,10 @@ Kallambalam 695605<br />
         {/* Quick Links */}
         <div className="md:col-span-1 text-center md:text-left">
           <div className="font-bold text-lg mb-2">Quick Links</div>
-          <ul>
-            <li className="mb-1 hover:underline"><a href="/who-we-are">Who We Are</a></li>
-            <li className="mb-1 hover:underline"><a href="/projects">Projects</a></li>
-           
-            <li className="mb-1 hover:underline"><a href="/reach-us">Contact Us</a></li>
+           <ul className="space-y-1">
+            <li><Link to="/who-we-are" className="hover:underline">Who We Are</Link></li>
+            <li><Link to="/projects" className="hover:underline">Projects</Link></li>
+            <li><Link to="/reach-us" className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
 
@@ -83,17 +83,10 @@ Kallambalam 695605<br />
        {/* Services */}
         <div className="text-center md:text-left">
           <div className="font-bold text-lg mb-2">Services</div>
-          <ul>
-            <li className="mb-1 hover:underline">
-              <a href="/what-we-offer#interiors">Interiors</a>
-            </li>
-            <li className="mb-1 hover:underline">
-              <a href="/what-we-offer#exteriors">Exteriors</a>
-            </li>
-            <li className="mb-1 hover:underline">
-              
-              <a href="/what-we-offer#landscaping">Landscaping</a>
-            </li>
+           <ul className="space-y-1">
+            <li><Link to="/what-we-offer#interiors" className="hover:underline">Interiors</Link></li>
+            <li><Link to="/what-we-offer#exteriors" className="hover:underline">Exteriors</Link></li>
+            <li><Link to="/what-we-offer#landscaping" className="hover:underline">Landscaping</Link></li>
           </ul>
         </div>
 
