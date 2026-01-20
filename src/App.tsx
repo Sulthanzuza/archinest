@@ -17,17 +17,7 @@ function App() {
   return (
  
     <Router>
-      <Snowfall
-        color="#f3fcffff"
-        snowflakeCount={200}  
-        style={{
-          position: 'fixed',
-          width: '100vw',
-          height: '100vh',
-          zIndex: 9999,
-          pointerEvents: 'none', 
-        }}
-      />
+     
       <ScrollToTop />
       <FloatingWhatsAppButton 
       phoneNumber="+919037813345"
